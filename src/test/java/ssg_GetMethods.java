@@ -22,14 +22,15 @@ public class ssg_GetMethods extends TestBase {
         Haffont-familytanın Yayınevi bölümündeki ilk kitabın resim genişliğinin 120, yüksekliğinin 174 olduğunu doğrulayınız.
         quit() ve close() metotları arasındaki farkı inceleyelim.
      */
-//        https://www.kitapyurdu.com/ adresine gidiniz.
+        //https://www.kitapyurdu.com/ adresine gidiniz.
         driver.get("https://www.kitapyurdu.com/");
 
-//        Anasayfanın açıldığını sayfa URL'si ile doğrulayınız.
+        //Anasayfanın açıldığını sayfa URL'si ile doğrulayınız.
         Assert.assertEquals("https://www.kitapyurdu.com/", driver.getCurrentUrl());
+
         //Anasayfanın açıldığını sayfa başlığı ile doğrulayınız. (Kitapyurdu, Kitapla buluşmanın en kolay yolu)
         Assert.assertEquals("Kitapyurdu, Kitapla buluşmanın en kolay yolu", driver.getTitle());
-//Anasayfada "Haftanın Yayınevi", "En Çok Satılanlar" ve "Ayın Yayınevleri" başlıklarının bulunduğunu doğrulayınız.
+        //Anasayfada "Haftanın Yayınevi", "En Çok Satılanlar" ve "Ayın Yayınevleri" başlıklarının bulunduğunu doğrulayınız.
         Assert.assertTrue(driver.getPageSource().contains("Haftanın Yayınevi"));
         Assert.assertTrue(driver.getPageSource().contains("En Çok Satılanlar"));
         Assert.assertTrue(driver.getPageSource().contains("Ayın Yayınevleri"));
