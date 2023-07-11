@@ -30,6 +30,7 @@ public class ssg_GetMethods extends TestBase {
 
         //Anasayfanın açıldığını sayfa başlığı ile doğrulayınız. (Kitapyurdu, Kitapla buluşmanın en kolay yolu)
         Assert.assertEquals("Kitapyurdu, Kitapla buluşmanın en kolay yolu", driver.getTitle());
+
         //Anasayfada "Haftanın Yayınevi", "En Çok Satılanlar" ve "Ayın Yayınevleri" başlıklarının bulunduğunu doğrulayınız.
         Assert.assertTrue(driver.getPageSource().contains("Haftanın Yayınevi"));
         Assert.assertTrue(driver.getPageSource().contains("En Çok Satılanlar"));
