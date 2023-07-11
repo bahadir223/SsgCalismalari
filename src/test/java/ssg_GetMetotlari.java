@@ -57,6 +57,7 @@ public class ssg_GetMetotlari extends TestBase {
         for (WebElement w : yazarIsmi) {
             Assert.assertEquals("Arial, Helvetica, sans-serif", w.getCssValue("font-family"));
 
+
             // Haftanın Yayınevi bölümündeki ilk kitabın resim genişliğinin 120, yüksekliğinin 174 olduğunun doğrulanması
             WebElement kurtulusGunu = driver.findElement(By.xpath("//img[@alt=\"Kurtuluş Günü\"]"));
 
