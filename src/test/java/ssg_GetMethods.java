@@ -36,7 +36,7 @@ public class ssg_GetMethods extends TestBase {
         Assert.assertTrue(driver.getPageSource().contains("En Çok Satılanlar"));
         Assert.assertTrue(driver.getPageSource().contains("Ayın Yayınevleri"));
 
-//Üye girişi butonunun üzerindeki metnin "Giriş Yap" olduğunu doğrulayınız.
+        //Üye girişi butonunun üzerindeki metnin "Giriş Yap" olduğunu doğrulayınız.
         WebElement girisYap = driver.findElement(By.xpath("//*[.='Giriş Yap']"));
         Assert.assertEquals("Giriş Yap", girisYap.getText());
 
@@ -46,13 +46,13 @@ public class ssg_GetMethods extends TestBase {
         String uyeOlAttribute = uyeOl.getAttribute("href");
         Assert.assertEquals("https://www.kitapyurdu.com/index.php?route=account/register", uyeOlAttribute);
 
-//En Çok Satılanlar bölümündeki yazar isimlerinin hepsinin span tagı içerisinde olduğunu doğrulayınız.
+        //En Çok Satılanlar bölümündeki yazar isimlerinin hepsinin span tagı içerisinde olduğunu doğrulayınız.
         List<WebElement> yazarIsmi = driver.findElements(By.cssSelector("[class='author line-clamp-2']"));
         for (WebElement w : yazarIsmi) {
             Assert.assertEquals("span", w.getTagName());
 
         }
-        //       En Çok Satılanlar bölümündeki yazar isimlerinin hepsinin font ailesinin "Arial, Helvetica, sans-serif" olduğunu doğrulayınız.
+        //En Çok Satılanlar bölümündeki yazar isimlerinin hepsinin font ailesinin "Arial, Helvetica, sans-serif" olduğunu doğrulayınız.
 
         for (WebElement w : yazarIsmi) {
             Assert.assertEquals("Arial, Helvetica, sans-serif", w.getCssValue("font-family"));
