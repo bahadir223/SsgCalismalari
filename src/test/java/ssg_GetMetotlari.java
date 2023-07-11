@@ -50,8 +50,8 @@ public class ssg_GetMetotlari extends TestBase {
         List<WebElement> yazarIsmi = driver.findElements(By.cssSelector("[class='author line-clamp-2']"));
         for (WebElement w : yazarIsmi) {
             Assert.assertEquals("span", w.getTagName());
-
         }
+
         //       En Çok Satılanlar bölümündeki yazar isimlerinin hepsinin font ailesinin "Arial, Helvetica, sans-serif" olduğunu doğrulayınız.
 
         for (WebElement w : yazarIsmi) {
