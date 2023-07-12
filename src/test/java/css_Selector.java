@@ -12,6 +12,7 @@ public class css_Selector extends TestBase {
         System.out.println(driver.findElement(By.cssSelector("[name=name1]")).getText());
         System.out.println(driver.findElement(By.cssSelector("[name=a][id=a]")).getText());
 
+
     }
 }
 /*
