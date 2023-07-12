@@ -8,7 +8,6 @@ public class xPath extends TestBase {
     public void xpathTestleri() {
         driver.get("https://theautomationzone.blogspot.com/2020/07/xpath-practice.html");
 
-
         // XPATH Basics
         System.out.println(driver.findElement(By.xpath("//*[@id='id1']")).getText());
         System.out.println(driver.findElement(By.xpath("//*[@name='name1']")).getText());
