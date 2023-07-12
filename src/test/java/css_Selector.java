@@ -22,7 +22,7 @@ public class css_Selector extends TestBase {
  [name=name1] bize unique olani verdi.
  Eger bizim attribute'umuz bir value degil de bir fonksiyon donduruyorsa orengin onclick="change()" bize bir method donduruyor. change() bu bir fonksiyondur. [onclick='change()'] seklinde
  lacate'i unique olarak aliriz. fonksiyon ise her iki yaninda tek tirnak kullanmaliyiz.
-​
+
  Multiple Attribute Changes: Locate alirken unique olani alamadik. p[name="a"] ancak birden fazla attribute yazarak daha guclu bir locate alma islemi olabilir. p[name=a][id=a]
  Parent/ Child
  xpath ile farki parent ile child arasinda > isaretini koyariz
@@ -35,3 +35,5 @@ public class css_Selector extends TestBase {
  nth-of-type kullanirken index kullaniyoruz. Hangi indexi istiyorsak sona o numarayi yaziyoruz.
  nth-last-of-type(3) de yazilabilir.
 }
+*/
+
